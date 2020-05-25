@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE HTML>
+<html class="no-js" lang="de">
+<head>
+<!-- <meta charset="utf-8"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index,follow">
+
+<title>People for Animals</title>
+
+<link href="static/css/font-awesome.min.css" rel="stylesheet">
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/css/bootsnav.css" rel="stylesheet">
+<link href="static/css/bootstrap.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/swipebox.css">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
+</head>
+<body>
+
+    <div>
+        {{ val }}
+        {% if(val == False) %}
+        {% include "nav.html" %}
+        {% else %}
+        {% include "pronav.html" %}
+        {% endif %}
+    </div>
+
+<div id="first-slider">
+    <div id="carousel-example-generic" class="carousel slide carousel-fade">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <!-- Item 1 -->
+            <div class="item active slide1">
+                        <h2 data-animation="animated bounceInDown"><span>Give a little change a lot</span></h2>
+                        <h3 data-animation="animated bounceInDown">Every single donation, no matter how big or small makes a BIG difference. Your donation benefits them alot. Don�t miss out on the opportunity to make a difference in the life of someone who really needs it today.</h3>
+                        <h4 data-animation="animated bounceInUp"><a href="/about">READ MORE</a></h4>             
+             </div> 
+            <!-- Item 2 -->
+            <div class="item slide2">
+                        <h2 data-animation="animated bounceInDown"><span>More charity More better life</span></h2>
+                        <h3 data-animation="animated bounceInDown">The life of a man consists not in seeing visions and in dreaming dreams, but in active charity and in willing service.</h3>
+                        <h4 data-animation="animated bounceInUp"><a href="/about">READ MORE</a></h4>             
+             </div>
+            <!-- Item 3 -->
+            <div class="item slide3">
+                        <h2 data-animation="animated bounceInDown"><span>Raise fund Warm heart</span></h2>
+                        <h3 data-animation="animated bounceInDown">A bone to the dog is not charity. Charity is the bone shared with the dog, when you are just as hungry as the dog.</h3>
+                        <h4 data-animation="animated bounceInUp"><a href="/about">READ MORE</a></h4>             
+             </div>
+            <!-- Item 4 -->
+            <div class="item slide4">
+                        <h2 data-animation="animated bounceInDown"><span>Raise your funds for a cause</span></h2>
+                        <h3 data-animation="animated bounceInDown">Charity is a supreme virtue, and the great channel through which the mercy of God is passed onto mankind.</h3>
+                        <h4 data-animation="animated bounceInUp"><a href="/about">READ MORE</a></h4>             
+             </div>
+            <!-- End Item 4 -->
+    
+        </div>
+        <!-- End Wrapper for slides-->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i><span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i><span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<section id="about-sec">
+<div class="container">
+<div class="row text-center">
+<h1>ABOUT People for Animals</h1>
+<hr>
+<h5>PFA, Mysore is a non profit organization which provides shelter for sick and abandoned animals.</h5>
+<p>The world has turned self-centred but there are few people who devote their lives to make this world a better place to live in for the voiceless creatures.PFA is one such organization. There are many animals like dogs, cats, cows, horses, rabbits, donkeys, parrots, eagle etc which need our love, care and help.</p>
+<p>So,come friends let's put our hands together in helping these animals and make our life more meaningful.</p>
+<div class="text-center">
+<a href="/donate" class="btn1">donate now</a>
+<a href="/about" class="btn2">Read More</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- <section id="activities-sec">
+<div class="container">
+<div class="row text-center">
+<h1>WHAT WE DO?</h1>
+<hr>
+<h5>PFA, Mysore is a non profit organization which provides shelter for sick and abandoned animals.</h5>
+<div class="text-left"> 
+<div class="col-md-4 clearfix top-off">
+<div class="grid-content-left"><i class="fa fa-heart"></i></div>
+<div class="grid-content-wrapper"><h4>ADOPTION CENTRE</h4><p>We try to place all adoptable animals in to loving homes. The dogs, puppies, cats and kittens are de-wormed, vaccinated and tested before being put up for adoption.</p>
+<a href="activities.html" title="" >Read More</a>
+</div>
+</div>
+<div class="col-md-4 clearfix top-off">
+<div class="grid-content-left"><i class="fa fa-plus"></i></div>
+<div class="grid-content-wrapper"><h4>ANIMAL CARE CLINIC</h4><p>We have a well- equipped clinic for the care and treatment of homeless animals. The clinic also serves pets, farm animals and wildlife. Our doctors are on call 24/7.</p>
+<a href="activities.html" title="" >Read More</a>
+</div>
+</div>
+<div class="col-md-4 clearfix top-off">
+<div class="grid-content-left"><i class="fa fa-home"></i></div>
+<div class="grid-content-wrapper"><h4>SHELTER AND RECOVERY SERVICES</h4><p>PFA provides shelter for sick and abandoned animals.Animals with injury, surgery are allowed to recover in a retaining room where they are housed in isolation.</p>
+<a href="activities.html" title="" >Read More</a>
+</div>
+</div>
+
+</div>
+</div>
+<div class="col-md-4 clearfix top-off">
+<div class="grid-content-left"><i class="fa fa-tree"></i></div>
+<div class="grid-content-wrapper"><h4>WILDLIFE REHABILITATION</h4><p>We also rescue wildlife, such as monkeys, birds , civet cats and if injured, help them to heal at the shelter. The healed animals are released back in a safe habitat.</p>
+<a href="activities.html" title="" >Read More</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> -->
+
+<section id="video-sec">
+<div class="container">
+<div class="row text-center">
+<h1>How can you help?</h1>
+<hr>
+<h5>These are some ways in which you can help.</h5>
+<div class="text-left"> 
+<div class="col-md-6 clearfix top-off">
+<video width="400" controls>
+ <source src="static/images/mov_bbb.mp4" type="video/mp4">
+</video>
+</div>
+<div class="col-md-6 clearfix top-off">
+<div class="media">
+<div class="media-image">
+<img src="static/images/g1.png" class="attachment-full size-full" alt="g1">																							</div>
+<div class="media-text">
+<h5>BECOME A VOLUNTEER</h5>
+<p>Provide hand on care, personal attention and love which the animals need the most. Volunteer activities include spending quiet time petting and getting to know your favourite aniamls.Walking/playing with the dogs and cats, grooming and general cleaning.</p>
+</div>
+</div>
+<div class="media">
+<div class="media-image">
+<img src="static/images/g2.png" class="attachment-full size-full" alt="g1">																							</div>
+<div class="media-text">
+<h5>Donate</h5>
+<p>Sponsor food items like rice, oats, milk, fruits and vegetable for a month.</p>
+</div>
+</div>
+<div class="media">
+<div class="media-image">
+<img src="static/images/g1.png" class="attachment-full size-full" alt="g1">																							</div>
+<div class="media-text">
+<h5>MAKE A GIFT</h5>
+<p>You can gift our perticular inmate warm cloths or toys,they will surely like it.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section id="gallery-sec">
+<div class="container">
+<div class="row text-center">
+<h1>Our shelter inmates</h1>
+<hr>
+<h5>Our animals are waiting to meet you all. Visit PFA, Mysore shelter and spend some time with our animals. All they need is your love,care and affection. Join your hands in helping animals</h5>
+<ul class="clearfix">
+
+<li>
+<a href="static/images/gallery1.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery1.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div></a>
+</li>
+<li>
+<a href="static/images/gallery2.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery2.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="static/images/gallery3.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery3.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="static/images/gallery4.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery4.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div>
+</a>
+</li>
+<li>
+<a href="static/images/gallery5.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery5.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div>
+</a>
+</li>
+<li>
+<a href="static/images/gallery6.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery6.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div>
+</a>
+</li>
+<li>
+<a href="static/images/gallery7.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery7.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div>
+</a>
+</li>
+<li>
+<a href="static/images/gallery8.jpg" class="swipebox" title="My Caption">
+<div class="image"><img src="static/images/gallery8.jpg">
+<div class="overlay"><i class="fa fa-search-plus"></i></div>
+</div>
+</a>
+</li>
+</ul>
+<div class="text-center">
+<a href="gallery.html" class="btn1">View More</a>
+</div>
+</div>
+</div>
+</section>
+
+<div class="callout">
+<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Change Their World. Change Yours. This changes everything.</h2><!-- /.callout-title -->
+			</div><!-- /.columns large-6 -->
+			
+			<div class="col-md-6">
+				<div class="callout-actions">
+					<a href="contact.html" class="button">Become Volunteer</a>
+
+					<span class="callout-separator">
+						<span>Or</span>
+					</span>
+
+                    <a href="donate.html" class="button">Donate For Cause</a>
+                    <!-- {% if(val==False) %}
+					<a href="/login" class="button">Donate For Cause</a>
+					{% else %}
+					<a href="/donate" class="button">Donate For Cause</a>
+					{% endif %} -->
+				</div><!-- /.callout-actions -->
+			</div><!-- /.columns large-6 -->
+		</div><!-- /.row -->
+</div>
+</div>
+
+{% include "footer.html" %}
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/bootsnav.js"></script>
+<script src="static/js/banner.js"></script>  
+<script src="static/js/jquery.swipebox.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+
+			/* Basic Gallery */
+			$( '.swipebox' ).swipebox();
+			
+			/* Video */
+			$( '.swipebox-video' ).swipebox();
+
+			/* Dynamic Gallery */
+			$( '#gallery' ).click( function( e ) {
+				e.preventDefault();
+				$.swipebox( [
+					{ href : 'http://swipebox.csag.co/mages/image-1.jpg', title : 'My Caption' },
+					{ href : 'http://swipebox.csag.co/images/image-2.jpg', title : 'My Second Caption' }
+				] );
+			} );
+
+      });
+</script>
+<script src="static/js/script.js"></script>
+</body>
+</html>

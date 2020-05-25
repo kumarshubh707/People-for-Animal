@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE HTML>
+<html class="no-js" lang="de">
+<head>
+<!-- <meta charset="utf-8"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index,follow">
+
+<title>People for Animals</title>
+
+<link href="static/css/font-awesome.min.css" rel="stylesheet">
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/css/bootsnav.css" rel="stylesheet">
+<link href="static/css/bootstrap.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/owl.carousel.css">
+<link href="static/css/owl.theme.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">  
+</head>
+<body>
+		{{ val }}
+        {% if(val == False) %}
+        {% include "nav.html" %}
+        {% else %}
+        {% include "pronav.html" %}
+        {% endif %}
+
+<section id="inner-banner">
+<div class="overlay">
+<div class="container">
+<div class="row"> 
+<div class="col-sm-6"><h1>ADOPT AN Animal</h1></div>
+<div class="col-sm-6">
+<h6 class="breadcrumb"><a href="index.html">Home</a> / Adopt an Animal</h6></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about-sec">
+<div class="container">
+<div class="row text-center">
+<div id="owl-demo" class="owl-carousel owl-theme">
+  
+ {% for i in res %} 
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/{{i['animalID']}}.jpg" alt="Image">
+<h4>Hi, I’m {{i["name"]}}</h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Shelter</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">{{i["age"]}}</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">{{i["bdate"]}}</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">{{i["animalID"]}}</div>
+</div>
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+{%endfor%} 
+<!--
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/gallery2.jpg" alt="Owl Image">
+<h4>Hi, I’m Ramu</h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Shelter</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">3</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">1/09/2009</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">You have to link</div>
+</div>
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/gallery3.jpg" alt="Owl Image">
+<h4>Hi, I’m </h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Shelter</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">7</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">1/09/2009</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">You have to link</div>
+</div>
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/gallery4.jpg" alt="Owl Image">
+<h4>Hi, I’m </h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Shelter</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">7</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">1/09/2009</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">You have to link</div>
+</div>
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/gallery6.jpg" alt="Owl Image">
+<h4>Hi, I’m </h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Shelter</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">7</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">1/09/2009</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">You have to link</div>
+</div>
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/gallery7.jpg" alt="Owl Image">
+<h4>Hi, I’m </h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Shelter</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">7</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">1/09/2009</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">You have to link</div>
+</div>
+{}
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/gallery8.jpg" alt="Owl Image">
+<h4>Hi, I’m Ogwang</h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Uganda</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">7</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">1/09/2009</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">You have to link</div>
+</div>
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+
+<div class="item">
+<div class="sponser-box">
+<img src="static/images/slide1.jpg" alt="Owl Image">
+<h4>Hi, I’m Ogwang</h4>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">Where I Live</div> 
+<div class="col-xs-6">Uganda</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Age</div> 
+<div class="col-xs-6">7</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My Birthday</div> 
+<div class="col-xs-6">1/09/2009</div>
+</div>
+<div class="spon-bdr clearfix">
+<div class="col-xs-6">My ID</div> 
+<div class="col-xs-6">You have to link</div>
+</div>
+{% if(val==False) %}
+<a href="/login" class="btn1">Adopt me</a>
+{% else %}
+<a href="/sponsor" class="btn1">Adopt me</a>
+{% endif %}
+</div>
+</div>
+ -->
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="activities-sec">
+<div class="container">
+<div class="row text-center">
+<h1>WHAT WE DO?</h1>
+<hr>
+<h5>PFA, Mysore is a non profit organization which provides shelter for sick and abandoned animals.</h5>
+<div class="text-left"> 
+<div class="col-md-4 clearfix top-off">
+<div class="grid-content-left"><i class="fa fa-heart"></i></div>
+<div class="grid-content-wrapper"><h4>Adoption Center</h4><p>We try to place all adoptable animals in to loving homes. The dogs, puppies, cats and kittens are de-wormed, vaccinated and tested before being put up for adoption.</p>
+<a href="activities.html" title="" >Read More</a>
+</div>
+</div>
+<div class="col-md-4 clearfix top-off">
+<div class="grid-content-left"><i class="fa fa-plus"></i></div>
+<div class="grid-content-wrapper"><h4>ANIMAL CARE CLINIC</h4><p>We have a well- equipped clinic for the care and treatment of homeless animals. The clinic also serves pets, farm animals and wildlife. Our doctors are on call 24/7.</p>
+<a href="activities.html" title="" >Read More</a>
+</div>
+</div>
+<div class="col-md-4 clearfix top-off">
+<div class="grid-content-left"><i class="fa fa-home"></i></div>
+<div class="grid-content-wrapper"><h4>SHELTER AND RECOVERY SERVICES</h4><p>PFA provides shelter for sick and abandoned animals.Animals with injury, surgery are allowed to recover in a retaining room where they are housed in isolation.</p>
+<a href="activities.html" title="" >Read More</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<!--
+<section id="video-sec">
+<div class="container">
+<div class="row text-center">
+<h1>How can you help?</h1>
+<hr>
+<h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+<div class="text-left"> 
+<div class="col-md-6 clearfix top-off">
+<video width="400" controls>
+ <source src="images/mov_bbb.mp4" type="video/mp4">
+</video>
+</div>
+<div class="col-md-6 clearfix top-off">
+<div class="media">
+<div class="media-image">
+<img src="images/g1.png" class="attachment-full size-full" alt="g1">																							</div>
+<div class="media-text">
+<h5>BECOME A VOLUNTEER</h5>
+<p>Give us a brief description of the service that you are promoting.</p>
+</div>
+</div>
+<div class="media">
+<div class="media-image">
+<img src="images/g2.png" class="attachment-full size-full" alt="g1">																							</div>
+<div class="media-text">
+<h5>MAKE A GIFT</h5>
+<p>Give us a brief description of the service that you are promoting.</p>
+</div>
+</div>
+<div class="media">
+<div class="media-image">
+<img src="images/g1.png" class="attachment-full size-full" alt="g1">																							</div>
+<div class="media-text">
+<h5>GIVE A SCHOLASHIP</h5>
+<p>Give us a brief description of the service that you are promoting.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+-->
+<div class="callout">
+<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Change Their World. Change Yours. This changes everything.</h2><!-- /.callout-title -->
+			</div><!-- /.columns large-6 -->
+			
+			<div class="col-md-6">
+				<div class="callout-actions">
+					<a href="contact.html" class="button">Become Volunteer</a>
+
+					<span class="callout-separator">
+						<span>Or</span>
+					</span>
+
+					<a href="donate.html" class="button">Donate For Cause</a>
+				</div><!-- /.callout-actions -->
+			</div><!-- /.columns large-6 -->
+		</div><!-- /.row -->
+</div>
+</div>
+
+{% include "footer.html" %}
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/bootsnav.js"></script>
+<script src="static/js/banner.js"></script>  
+<script src="static/js/owl.carousel.js"></script>
+ <script>
+          $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      autoPlay: 5000, //Set AutoPlay to 3 seconds
+	  navigation : true,
+      navigationText:["",""],
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+ 
+});
+          </script>
+          <script src="static/js/script.js"></script>
+</body>
+</html>

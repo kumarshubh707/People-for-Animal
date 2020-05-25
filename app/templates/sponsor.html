@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE HTML>
+<html class="no-js" lang="de">
+<head>
+<!-- <meta charset="utf-8"> -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index,follow">
+
+<title>People for Animals</title>
+
+<link href="static/css/font-awesome.min.css" rel="stylesheet">
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/css/bootsnav.css" rel="stylesheet">
+<link href="static/css/bootstrap.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> 
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">  
+</head>
+<body>
+		{{ val }}
+        {% if(val == False) %}
+        {% include "nav.html" %}
+        {% else %}
+        {% include "pronav.html" %}
+        {% endif %}
+
+<section id="inner-banner">
+<div class="overlay">
+<div class="container">
+<div class="row"> 
+<div class="col-sm-6"><h1>ADOPT</h1></div>
+<div class="col-sm-6">
+  <h6 class="breadcrumb"><a href="index.html">Home</a> / Adopt</h6></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="about-sec">
+<div class="container">
+<div class="row text-center">
+<h2 style="margin-top:0;">I WISH TO BE AN  ADOPTER</h2>
+<form action="/sponsor" method="post">
+<div class="con-form clearfix">
+<div class="col-md-6">
+<input type="number" name="adopterID" value="" size="40" class="" aria-invalid="false" placeholder="User ID*">
+</div>
+<div class="col-md-6">
+<input type="number" name="animalID" value="" size="40" class="" aria-invalid="false" placeholder="Animal ID*">
+</div>
+<div class="col-md-6">
+<input type="text" name="firstname" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="First Name*">
+</div>
+<div class="col-md-6">
+<input type="text" name="lastname" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Last Name*">
+</div>
+<div class="col-md-6">
+<input type="text" name="phno" value="" size="40" class="" aria-invalid="false" placeholder="Phone Number*">
+</div>
+<div class="col-md-6">
+<input type="email" name="email" value="" size="40" class="" aria-invalid="false" placeholder="Email ID*">
+</div>
+
+<div class="col-md-6">
+<input type="text" name="streetadd" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Street Address*">
+</div>
+<div class="col-md-6">
+<input type="text" name="city" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="City / Town*">
+</div>
+<div class="col-md-6">
+<input type="text" name="country" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Country*">
+</div>
+<!--
+<div class="col-md-6">
+<input type="text" name="amount" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Amount*">
+</div>-->
+<div class="col-md-12">
+<textarea name="message" cols="40" rows="5" class="" id="message" aria-invalid="false" placeholder="Message"></textarea>
+</div>
+<div class="col-xs-12 submit-button">
+<input type="submit" value="Adopt Now" class="btn2" id="sub" style="border:none; margin: 20px 0 0 0">
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<div class="callout">
+<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Change Their World. Change Yours. This changes everything.</h2><!-- /.callout-title -->
+			</div><!-- /.columns large-6 -->
+			
+			<div class="col-md-6">
+				<div class="callout-actions">
+					<a href="contact.html" class="button">Become Volunteer</a>
+
+					<span class="callout-separator">
+						<span>Or</span>
+					</span>
+
+					<a href="donate.html" class="button">Donate For Cause</a>
+				</div><!-- /.callout-actions -->
+			</div><!-- /.columns large-6 -->
+		</div><!-- /.row -->
+</div>
+</div>
+
+{% include "footer.html" %}
+
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/bootsnav.js"></script>
+<script src="static/js/banner.js"></script>  
+<script src="static/js/script.js"></script>
+</body>
+</html>
